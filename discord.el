@@ -13,13 +13,13 @@
 (require 'calendar)
 
 ;;;###autoload
-(defun discordian-date (date)
+(defun discord-date (date)
   "Print DATE from the discordian calendar."
   (interactive (list (calendar-read-date)))
   (message (discordian-date-string date)))
 
 ;;;###autoload
-(cl-defun discordian-date-string (&optional (date (calendar-current-date)))
+(cl-defun discord-date-string (&optional (date (calendar-current-date)))
   "Convert DATE to discordian format."
   (let* ((days      ["Sweetmorn" "Boomtime" "Pungenday" "Prickle-Prickle" "Setting Orange"])
          (months    ["Chaos" "Discord" "Confusion" "Bureaucracy" "Aftermath"])
