@@ -16,7 +16,7 @@
 (defun discord-date (date)
   "Print DATE from the discordian calendar."
   (interactive (list (calendar-read-date)))
-  (message (discordian-date-string date)))
+  (message (discord-date-string date)))
 
 ;;;###autoload
 (cl-defun discord-date-string (&optional (date (calendar-current-date)))
